@@ -51,7 +51,9 @@ For each annual report, the model extracts the following fields:
   "risks": [],
   "management_outlook": []
 }
+
 Field descriptions
+
 | Field | Description |
 | :--- | :--- |
 | `business` | Summary of the company's main business |
@@ -59,6 +61,7 @@ Field descriptions
 | `competitive_advantages` | Competitive strengths explicitly supported by the source text |
 | `risks` | Risks explicitly mentioned in the source text |
 | `management_outlook` | Management's expectations or outlook for future development |
+
 The model is instructed not to invent information that is not supported by the provided text.
 
 ⸻
