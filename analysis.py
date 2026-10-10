@@ -21,4 +21,4 @@ def analyze_report(source_text,company, report_year):
     risks=json.dumps(result["risks"],ensure_ascii=False)
     management_outlook=json.dumps(result["management_outlook"],ensure_ascii=False)
     report_data = (company, report_year,source_text,result["business"],revenue_drivers,competitive_advantages,risks,management_outlook)
-    return report_data
+    return result,report_data

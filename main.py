@@ -1,6 +1,5 @@
 import json
 import database
-import analysis
 def print_result(rows):
     for row in rows: 
         print("公司：", row[1])
@@ -20,13 +19,6 @@ def print_result(rows):
             print("-", item)
 
 def main():
-    company=input("请输入公司名称：")
-    report_year=int(input("请输入年报年份："))
-    with open("data/example_annual_report.txt", "r", encoding="utf-8") as f:
-        source_text = f.read()
-    database.create_table()
-    report_data=analysis.analyze_report(source_text,company,report_year)
-    database.insert_analysis(report_data)
     rows=database.query_info()
     print_result(rows)
 
